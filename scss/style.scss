@@ -1,0 +1,363 @@
+
+
+@import "star";
+
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+ .container{
+    display: flex;
+}
+
+@mixin div {
+    width: 20vw;
+    background-color: #ddd;
+    border: 1px solid black;
+}
+
+.links{
+   
+    @include div;
+    max-height: 100vh;
+    overflow: scroll;
+  
+}
+
+#erste , #zwte , #drte , #vite , #fnte , #sete , #site {
+    @include div;
+    height: 25vh;
+    &:hover{
+        color: #fff;
+        background-color: #333;;
+        
+    }
+
+
+
+    h3{
+        font-size: 0.8em;
+    }
+
+
+
+
+    p{
+        width: 18vw;
+        font-size: 0.8em;
+        
+    }
+}
+
+
+    h4{
+    display: none;
+} 
+
+
+
+.rechts{
+    background-color: #ddd;
+    width: 80%;
+    height: 100vh;
+    border: 1px solid black;
+   
+}
+
+.foto{
+    width: 75vw;
+    height: 90vh;
+    margin: 2vw;
+    border: 1px solid black;
+    background-image: url(../images/ab.jpg);
+    background-repeat: no-repeat;
+    background-size: 75vw;
+    position: relative;
+    overflow: hidden;
+
+}
+.rein{
+    display: flex;
+    width: 75vw;
+    height: 90vh;
+    background-color: #333;
+    opacity: 0.7;
+    position: absolute;
+
+}
+
+
+   
+.star1{
+    @include star
+}
+.star2{
+    @include star
+
+}
+.star3{
+    @include star
+}
+.star4{
+    @include star
+}
+.star5{
+    @include star(lightyellow)
+}
+span{
+    display: flex;
+    margin :10%;
+}
+#reinl{
+    margin-top: 10%;
+    width: 20%;
+    height: 40%;
+   
+}
+#reinr{
+    margin-top: 10%;
+    width: 60%;
+    height: 30%;
+}   
+
+.rechts{
+    width: 80%;
+    height: 100vh;
+    border: 1px solid black;
+   
+}
+
+.foto{
+    width: 75vw;
+    height: 90vh;
+    margin: 2vw;
+    border: 1px solid black;
+    background-image: url(../images/ab.jpg);
+    background-repeat: no-repeat;
+    background-size: 75vw;
+    position: relative;
+    overflow: hidden;
+
+}
+.rein{
+    display: flex;
+    width: 75vw;
+    height: 90vh;
+    background-color: #333;
+    opacity: 0.7;
+    position: absolute;
+    justify-content: space-between;
+
+}
+
+
+   
+.star1{
+    @include star(yellow,10px)
+}
+.star2{
+    @include star(yellow,10px)
+}
+.star3{
+    @include star(yellow,10px)
+}
+.star41{
+    @include star(yellow,10px)
+}
+.star5{
+    @include star(lightyellow,10px)
+}
+span{
+    display: flex;
+    margin-left: 5%;
+}
+#reinl{
+    margin-top: 10%;
+    width: 40%;
+    height: 40%;
+    p{
+        margin-right: 10%;
+        width: 40vw;
+    }
+}
+#reinr{
+    margin-top: 10%;
+    width: 30%;
+    height: 40%;
+}
+
+
+@media(max-width :1400px){
+    .star1{
+        @include star(yellow,8px)
+    }
+    .star2{
+        @include star(yellow,8px)
+    }
+    .star3{
+        @include star(yellow,8px)
+    }
+    .star4{
+        @include star(yellow,8px)
+    }
+    .star5{
+        @include star(lightyellow,8px)
+    }
+
+   
+    #erste , #zwte , #drte , #vite , #fnte , #sete , #site {
+        @include div;
+        height: 25vh;
+        &:hover{
+            color: #fff;
+            background-color: #333;;
+        }
+        h3{
+            font-size: 0.5em
+        }
+    
+        p{
+            width: 18vw;
+            font-size: 0.5em;
+            
+        }
+    }
+    
+}
+
+
+
+
+
+@media(max-width :1000px){
+    .star1{
+        @include star(yellow,5px)
+    }
+    .star2{
+        @include star(yellow,5px)
+    }
+    .star3{
+        @include star(yellow,5px)
+    }
+    .star4{
+        @include star(yellow,5px)
+    }
+    .star5{
+        @include star(lightyellow,5px)
+    }
+
+   
+    #erste , #zwte , #drte , #vite , #fnte , #sete , #site {
+        @include div;
+        height: 25vh;
+        &:hover{
+            color: #fff;
+            background-color: #333;;
+        }
+        h3{
+            font-size: 0.5em
+        }
+    
+        p{
+            width: 18vw;
+            font-size: 0.5em;
+            
+        }
+    }
+    
+}
+@media(max-width :600px){
+    
+    .star1{
+        @include star(yellow,4px)
+    }
+    .star2{
+        @include star(yellow,4px)
+    }
+    .star3{
+        @include star(yellow,4px)
+    }
+    .star4{
+        @include star(yellow,4px)
+    }
+    .star5{
+        @include star(lightyellow,4px)
+    }
+
+   
+    #erste , #zwte , #drte , #vite , #fnte , #sete , #site {
+        @include div;
+        height: 25vh;
+        &:hover{
+            color: #fff;
+            background-color: #333;;
+        }
+        h3{
+            font-size: 0.4em
+        }
+    
+    
+    
+    
+        p{
+            width: 18vw;
+            font-size: 0.4em;
+            
+    
+    
+        
+    }
+    
+    
+    }
+    
+}    
+@media(max-width :400px){
+    .star1{
+        @include star(yellow,2px)
+    }
+    .star2{
+        @include star(yellow,2px)
+    }
+    .star3{
+        @include star(yellow,2px)
+    }
+    .star4{
+        @include star(yellow,2px)
+    }
+    .star5{
+        @include star(lightyellow,2px)
+    }
+
+   
+    #erste , #zwte , #drte , #vite , #fnte , #sete , #site {
+        @include div;
+        height: 25vh;
+        &:hover{
+            color: #fff;
+            background-color: #333;;
+        }
+        h3{
+            font-size: 0.3em
+        }
+    
+    
+    
+    
+        p{
+            width: 18vw;
+            font-size: 0.3em;
+            
+    
+    
+        
+    }
+    
+    
+    }
+    
+}    
+
+

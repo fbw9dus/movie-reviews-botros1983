@@ -1,0 +1,30 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links {
+  width: 20vw;
+  border: 1px solid black;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.erste, .zwte, .drte, .vite, .fnte, .sete, .site {
+  width: 20vw;
+  border: 1px solid black;
+  height: 25vh;
+}
+
+.rechts {
+  width: 80%;
+  height: 100vh;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */
